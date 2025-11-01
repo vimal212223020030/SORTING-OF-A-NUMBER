@@ -21,17 +21,11 @@ To write and execute an Assembly Language Program for sorting data in Ascending 
 
 ## Program (Ascending order)
 
-```asm
+ORG 000H LOOP1:MOV R0,#40H MOV R6,30H LOOP:MOV A, @R0 INC R0 MOV B,@R0 CJNE A,B,NEXT NEXT:JC DOWN MOV @R0,A DEC R0 MOV @R0,B INC R0DOWN: DJNZ R6, LOOP MOV R1, #02H DJNZ R1, LOOP1 END
 
-
-
-
-```
 ## OUTPUT(Ascending order)
+![WhatsApp Image 2025-11-01 at 08 41 30_60961f68](https://github.com/user-attachments/assets/387a5917-d798-4112-bbd2-22d29aa5def3)
 
-
-
----
 
 ## Algorithm(Descending order)
 1. Initialize the register **R7** with count.  
@@ -46,14 +40,11 @@ To write and execute an Assembly Language Program for sorting data in Ascending 
    - If **Yes**, stop the program.  
 ---
 ## Program (Descending order)
+ORG 000H LOOP1:MOV R0,#40H MOV R6,30H LOOP:MOV A, @R0 INC R0 MOV B,@R0 CJNE A,B,NEXT NEXT:JNC DOWN MOV @R0,A DEC R0 MOV @R0,B INC R0DOWN: DJNZ R6, LOOP MOV R1, #02H DJNZ R1, LOOP1 END
 
-```asm
-
-
-
-
-```
 ## OUTPUT(Descending order)
+![WhatsApp Image 2025-11-01 at 08 46 11_c29afd6e](https://github.com/user-attachments/assets/e7bc84fb-1624-43a1-9853-92f45083836c)
+
 
 
 
